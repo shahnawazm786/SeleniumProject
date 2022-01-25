@@ -14,6 +14,7 @@ public class SeleniumGettingStrart {
 	}
 	static void startup() {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
+		
 		driver=new ChromeDriver();
 		driver.get("https://www.google.com");
 		}
