@@ -12,6 +12,7 @@ public class SeleniumGettingStrart {
 		getAnotherUrl(); // maven
 		goBack(); //google
 		goForward();//maven
+		pageSource();
 		close();
 	}
 	static void startup() {
@@ -37,6 +38,10 @@ public class SeleniumGettingStrart {
 	static void goForward() throws InterruptedException {
 		Thread.sleep(2000); // static wait
 		driver.navigate().forward();
+	}
+	static void pageSource() {
+		String pageSource=driver.getPageSource();
+		System.out.println(pageSource);
 	}
 	static void close() {
 		//driver.quit();
