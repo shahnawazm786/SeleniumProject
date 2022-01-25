@@ -1,5 +1,6 @@
 package selenium02;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -34,6 +35,8 @@ public class FindElementExample {
 		ele.sendKeys(Keys.ENTER);
 		*/
 		driver.findElement(By.name("q")).sendKeys("selenium"+Keys.ENTER);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		driver.findElement(By.tagName("a"));
 		
 	}
 	static void registerUser() {
