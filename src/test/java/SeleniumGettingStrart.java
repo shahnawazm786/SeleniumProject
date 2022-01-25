@@ -7,9 +7,11 @@ public class SeleniumGettingStrart {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		startup();
-		maximizeBrowser();
-		getTitle();
-		getAnotherUrl();
+		maximizeBrowser(); //google
+		getTitle();// title show
+		getAnotherUrl(); // maven
+		goBack(); //google
+		goForward();//maven
 		close();
 	}
 	static void startup() {
@@ -29,8 +31,15 @@ public class SeleniumGettingStrart {
 	static void getAnotherUrl() {
 		driver.get("https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.1.1");
 	}
+	static void goBack() {
+		driver.navigate().back();
+	}
+	static void goForward() throws InterruptedException {
+		Thread.sleep(2000); // static wait
+		driver.navigate().forward();
+	}
 	static void close() {
-		driver.quit();
+		//driver.quit();
 	}
 }
 
