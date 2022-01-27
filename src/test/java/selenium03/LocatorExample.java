@@ -12,8 +12,8 @@ public class LocatorExample {
 	public static void main(String[] args) throws InterruptedException{
 		// TODO Auto-generated method stub
 		setup();
-	//	findElementByTagName();
-	//	findElementById();
+		findElementByTagName();
+		findElementById();
 		feedForm();
 	}
 	static void setup() {
