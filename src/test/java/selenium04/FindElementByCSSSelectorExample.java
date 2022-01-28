@@ -11,6 +11,7 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		getUrl("https://askomdch.com/account/");
 		login();
 		verifyData();
+		close();
 	}
 	static void login() {
 		WebElement inputLogin=driver.findElement(By.cssSelector(".woocommerce-Input"));
