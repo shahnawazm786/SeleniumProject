@@ -13,6 +13,7 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		getUrl("https://askomdch.com/account/");
 		login();
 		verifyData();
+		countPTag();
 		close();
 	}
 	static void login() {
