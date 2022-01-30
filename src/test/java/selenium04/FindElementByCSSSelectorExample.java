@@ -16,6 +16,7 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		countPTag();
 		countDivTag();
 		countImgTag();
+		countAnchorTag();
 		close();
 	}
 	static void login() {
