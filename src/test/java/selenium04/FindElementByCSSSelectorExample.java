@@ -26,5 +26,9 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		String message=driver.findElement(By.xpath("(//p)[3]")).getText();
 		System.out.println(message);
 	}
+	static void countPTag() {
+		
+	}
 //
+
 }
