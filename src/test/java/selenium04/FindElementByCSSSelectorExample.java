@@ -30,6 +30,7 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 	}
 	static void countPTag() {
 		List<WebElement> listPTag=driver.findElements(By.tagName("p"));
+		System.out.println("Number of P tag in the page"+listPTag.size());
 	}
 //
 
