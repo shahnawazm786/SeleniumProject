@@ -48,6 +48,10 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		List<WebElement> listAnchorTag=driver.findElements(By.tagName("a"));
 		System.out.println("Number of P tag in the page"+listAnchorTag.size());
 	}
+	static void countSpanTag() {
+		
+	}
+	
 //
 
 }
