@@ -43,6 +43,9 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		List<WebElement> listImgTag=driver.findElements(By.tagName("img"));
 		System.out.println("Number of P tag in the page"+listImgTag.size());
 	}
+	static void countAnchorTag() {
+		
+	}
 //
 
 }
