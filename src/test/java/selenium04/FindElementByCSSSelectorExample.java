@@ -27,7 +27,7 @@ public class FindElementByCSSSelectorExample extends BaseClass {
 		System.out.println(message);
 	}
 	static void countPTag() {
-		
+		List<WebElement> listPTag=driver.findElements(By.tagName("p"));
 	}
 //
 
