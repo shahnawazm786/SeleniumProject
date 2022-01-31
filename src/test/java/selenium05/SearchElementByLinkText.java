@@ -12,8 +12,10 @@ public class SearchElementByLinkText extends BaseClass {
 		// TODO Auto-generated method stub
 		setup();
 		getUrl("file:///F:/AutomationClass_WorkSpace/SeleniumProject/src/test/resources/Demo.html");
-		getLinkText();
-		getLinkText("facebook");
+		//getLinkText();
+		//getLinkText("facebook");
+		//showPartialLink();
+		showByClass();
 		
 	}
 	static void getLinkText() {
@@ -38,5 +40,26 @@ public class SearchElementByLinkText extends BaseClass {
 			linkElement.get(0).click();	
 		}
 		
+	}
+	static void showPartialLink() {
+		WebElement linkElement=	driver.findElement(By.partialLinkText("Google"));
+		linkElement.click();
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+	}
+	static void showByClass() {
+		//firstsection
+		List<WebElement> linkElement=driver.findElements(By.className("firstsection"));
+		
+		for(WebElement el:linkElement) {
+			System.out.println(el.getTagName());
+		}
+		//background
+		System.out.println("background class");
+			linkElement=driver.findElements(By.className("background"));
+		
+		for(WebElement el:linkElement) {
+			System.out.println(el.getTagName());
+		}
 	}
 }
