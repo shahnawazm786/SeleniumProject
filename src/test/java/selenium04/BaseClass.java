@@ -17,5 +17,6 @@ public class BaseClass {
 	}
 	static void close() {
 		driver.quit();
+		//driver.close();
 	}
 }
