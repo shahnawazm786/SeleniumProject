@@ -29,6 +29,14 @@ public class SearchElementByLinkText extends BaseClass {
 			System.out.println(ele.getText());
 			System.out.println(ele.getAttribute("href"));
 		}
+		if(siteName.equals("facebook")) {
+			linkElement.get(1).click();
+		} else if(siteName.equals("linkedin")) {
+			linkElement.get(2).click();	
+		}
+		else {
+			linkElement.get(0).click();	
+		}
 		
 	}
 }
