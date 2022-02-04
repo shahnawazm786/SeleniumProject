@@ -21,5 +21,6 @@ public class XpathExample extends BaseClass{
 		String text=driver.findElement(By.xpath("//label[@for='male']")).getText();
 		System.out.println(text);
 	}
+	
 
 }
