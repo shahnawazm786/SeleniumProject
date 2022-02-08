@@ -41,6 +41,7 @@ public class SelectOptionExample extends BaseClass {
 		for(WebElement el:opt) {
 			System.out.println(el.getText());
 		}
+		
 	}
 
 }
