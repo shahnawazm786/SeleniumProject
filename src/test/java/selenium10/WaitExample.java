@@ -15,7 +15,7 @@ public class WaitExample extends BaseClass {
 		// TODO Auto-generated method stub
 		setup();
 		getUrl("file:///C:/Users/ADMIN/Desktop/HTMLPage/JSExample.html");
-		//getButton();
+		getButton();
 		getButtonExplicitWait();
 	}
 	
