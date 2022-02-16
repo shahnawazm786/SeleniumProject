@@ -48,11 +48,13 @@ public class WaitExample extends BaseClass {
 		ele.click();
 	}
 	static void takeScreenshotElement() throws IOException {
-		WebElement ele=driver.findElement(By.id("Button2"));
-		ele.click();
+		WebElement ele=null;
+		try{ele=driver.findElement(By.id("Button2"));
+		ele.click();}catch(Exception ex) {
 		File srcFile=ele.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File("src/test/resources/screenshot/element/ele.png"));
 		driver.quit();
+		}
 	}
 
 }
