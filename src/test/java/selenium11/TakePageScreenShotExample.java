@@ -48,5 +48,5 @@ public class TakePageScreenShotExample extends BaseClass {
 		//driver.close();
 	
 	}
-	
+	//http://demos.codexworld.com/multi-select-dropdown-list-with-checkbox-jquery/
 }

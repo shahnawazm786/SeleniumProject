@@ -14,13 +14,14 @@ import selenium04.BaseClass;
 
 public class WaitExample extends BaseClass {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException,InterruptedException {
 		// TODO Auto-generated method stub
 		setup();
 		getUrl("file:///C:/Users/ADMIN/Desktop/HTMLPage/JSExample.html");
 		//getButton();
 		//getButtonExplicitWait();
-		takeScreenshotElement();
+		//takeScreenshotElement();
+		handleAlert();
 	}
 	
 	static void getButton() throws IOException {
@@ -55,6 +56,16 @@ public class WaitExample extends BaseClass {
 		FileUtils.copyFile(srcFile, new File("src/test/resources/screenshot/element/ele.png"));
 		driver.quit();
 		}
+	}
+	static void handleAlert() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		WebElement ele=null;
+		ele=driver.findElement(By.id("Button2"));
+		ele.click();
+		//Thread.sleep(2000);
+		Alert al=driver.switchTo().alert();
+		al.accept();
+		al.accept();
 	}
 
 }
