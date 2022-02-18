@@ -66,6 +66,7 @@ public class WaitExample extends BaseClass {
 		Alert al=driver.switchTo().alert();
 		al.accept();
 		al.accept();
+		
 	}
 
 }
